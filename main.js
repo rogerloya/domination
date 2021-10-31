@@ -31,7 +31,7 @@ setImage('#image-3', 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%
 
 function removeArgument() {
     const argumentsU1 = document.querySelector('#arguments li');
-    arguments.remove();
+    argumentsU1.remove();
 }
 
 removeArgument();
@@ -42,7 +42,7 @@ function changeIDFontSize(size, id) {
     string.style.fontSize = size;
 }
 
-changeIDFontSize('12px', "title")
+changeIDFontSize('12px', "lorem")
 
 
 //Part 2
@@ -75,8 +75,8 @@ makeElementInvisible(h1)
 
 // Part 3
 
-function makeLi(test) {
-    const li = document.createElement('li';
+function makeLi(text) {
+    const li = document.createElement('li');
     li.innerText = text;
     return li
 }
